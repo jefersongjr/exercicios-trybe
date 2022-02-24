@@ -1,0 +1,26 @@
+body {
+        font-size: 16px;
+        background-color: red;
+      }
+
+      h1 {
+        size: 65px;
+        color:#00ff00;
+        font-family: sans-serif;
+      }
+
+      p {
+        background-color: rgb(0,0,255);;
+        font-size: 3em;
+      }
+
+      li {
+        background-color: blueviolet;
+        font-style: oblique;
+        text-align: center;
+        text-decoration: underline;
+        line-height: 15px;
+      }
+
+      .background {
+        background-color: aqua;}
