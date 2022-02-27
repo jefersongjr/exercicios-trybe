@@ -22,3 +22,28 @@ div:nth-of-type(3){
 div:nth-of-type(4){
     background-color: darkorchid;
 }
+
+div:first-of-type h3:hover{
+    color: crimson;
+}
+div:last-of-type h3:active{
+   font-size: 35px ;
+}
+
+div:nth-of-type(2) h3{
+    color: gray ;
+}
+
+div:nth-of-type(3) h3:hover{
+    background-color: darkgreen;
+    height: 200px;
+}
+
+div:nth-of-type(4) h3{
+    color: aliceblue;
+}
+
+div:nth-child(2n+1) h3{
+    font-style: italic;
+    text-decoration: underline;
+}
