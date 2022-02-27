@@ -1,0 +1,24 @@
+div:hover {
+    border-width: 3px;/* faz a borda ficar vísivel*/
+    border-style: dotted;
+    border-color: blueviolet;
+}
+
+div:first-of-type{
+    background-color: pink;
+}
+div:last-of-type {
+    background-color: cornflowerblue ;
+}
+
+div:nth-of-type(2){
+    background-color: green;
+}
+
+div:nth-of-type(3){
+    background-color: red;
+}
+
+div:nth-of-type(4){
+    background-color: darkorchid;
+}
