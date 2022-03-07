@@ -14,3 +14,12 @@ if( currentHour >= 22){
 }
 
 console.log(mensage);
+
+let weekDay = "terça-feira";
+
+if(weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay=== "quarta-feira"|| weekDay=== "quinta-feira" || weekDay=== "sexta-feira"){
+    console.log("Oba! mais um dia de aprendizado na Trybe!");
+}else if(weekDay === "sabado" || weekDay === "domingo"){
+    console.log("Finalmente! descanso merecido UwU");
+}
+console.log(weekDay)
