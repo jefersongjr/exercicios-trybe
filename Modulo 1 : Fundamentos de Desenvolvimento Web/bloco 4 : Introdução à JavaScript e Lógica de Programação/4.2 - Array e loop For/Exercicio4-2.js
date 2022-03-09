@@ -10,3 +10,6 @@ for(index = 0 ; index <numbers.length; index += 1){
     soma += numbers[index];
 }
 console.log(soma); /* percorra todo array e some os elementos*/
+
+let mediaAritmetica = soma/(numbers.length);
+console.log(mediaAritmetica);  /*Faça a média aritmetica */
