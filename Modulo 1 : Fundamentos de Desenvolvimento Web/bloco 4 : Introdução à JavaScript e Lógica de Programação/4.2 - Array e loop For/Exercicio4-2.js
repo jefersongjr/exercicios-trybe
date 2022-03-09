@@ -34,3 +34,17 @@ for(index = 0 ; index <numbers.length; index += 1){
     } 
 }
 console.log(maiorNumero);
+
+/*6 - descobrir valores impares*/
+
+let impar = 0;
+for(index = 0 ; index < numbers.length; index += 1){
+    if(numbers[index] % 2 !== 0 ){
+        impar += 1;
+    }else{
+        impar = impar ;
+    }
+}
+console.log(impar);
+
+/* 7- menor numero dentro do array*/
