@@ -48,3 +48,12 @@ for(index = 0 ; index < numbers.length; index += 1){
 console.log(impar);
 
 /* 7- menor numero dentro do array*/
+let menorNumero = maiorNumero;
+for(index = 0 ; index <numbers.length; index += 1){
+    if(menorNumero < numbers[index]){
+        menorNumero = menorNumero ;
+    }else {
+        menorNumero = numbers[index];
+    } 
+}
+console.log(menorNumero);
