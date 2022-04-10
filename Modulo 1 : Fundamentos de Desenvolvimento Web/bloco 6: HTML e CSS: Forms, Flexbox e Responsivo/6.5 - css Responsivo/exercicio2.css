@@ -14,69 +14,130 @@ header {
   align-items: center;
   background-color: rgb(48, 104, 150);
 }
-header section{
-    margin: auto;
-    width: 95%;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
+header section {
+  margin: auto;
+  width: 95%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
 
 header nav {
   display: none;
 }
 
-ul{
-    width: 90%;
-    margin: 0 auto 10px;
-
+ul {
+  width: 90%;
+  margin: 0 auto 10px;
 }
 
-.aside-one h2, .aside-two h2{
-    font-size: 30px;
-    text-align: center;
-    background-color: rgb(187, 227, 250);
+.aside-one h2,
+.aside-two h2 {
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(187, 227, 250);
 }
 
-.aside-two ul{
-    font-size: 20px;
+.aside-two ul {
+  font-size: 20px;
 }
 
 .main-content div {
-width: 100%;
-background-color: rgb(187, 227, 250);
-
+  width: 100%;
+  background-color: rgb(187, 227, 250);
 }
 
 .main-content div h1 {
-    font-size: 25px;
-    width: 90%;
-    margin: 0 auto 10px;
-    text-align: center;
+  font-size: 25px;
+  width: 90%;
+  margin: 0 auto 10px;
+  text-align: center;
 }
 
 .main-content p {
-    width: 90%;
-    text-align: center;
-    margin: auto;
-    font-size: 20px;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
-footer h3{
-    background-color: rgb(187, 227, 250)
+footer h3 {
+  background-color: rgb(187, 227, 250);
 }
 
-footer p{
-    width: 90%;
-    margin: 0 auto 10px;
+footer p {
+  width: 90%;
+  margin: 0 auto 10px;
 }
 
-ul{
+ul {
+  list-style-type: none;
+}
 
-    list-style-type: none;
+@media screen and (min-width: 800px) {
+  .container{
+      display: flex;
+      flex-direction: column;
+  }
+  
+    header {
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  header section {
+    margin: 0 15px;
+    text-align: left;
+    font-size: 25px;
+    align-items: center;
+  }
+  header nav {
+    display: flex;
+  }
+
+  header nav ul {
+    display: flex;
+    margin: 5px 20px 0 0;
+    font-size: 20px;
+    color: rgb(240, 248, 255);
+    font-weight: bold;
+  }
+  header nav ul li {
+    margin-right: 10px;
+  }
+
+  .aside-container{
+      display:flex;
+      justify-content: space-between;
+  }
+
+  .aside-one, .aside-two{
+    flex-basis: 50%;
+    border: 1px solid rgb(43, 189, 226);
+    border-radius: 4px;
+
+  }
+
+
+.aside-one h2,
+.aside-two h2 ,
+.main-content div h1{
+  font-size: 40px;
+}
+.aside-two ul , .aside-one ul{
+    font-size: 30px;
+  }
+
+  .aside-two ul{
+      padding-top: 100px;
+  }
+  .main-content p{
+      font-size: 30px;
+  }
+
 }
