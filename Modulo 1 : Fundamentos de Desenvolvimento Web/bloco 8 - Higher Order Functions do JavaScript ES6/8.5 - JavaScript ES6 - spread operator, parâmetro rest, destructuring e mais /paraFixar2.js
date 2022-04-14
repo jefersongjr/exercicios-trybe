@@ -11,7 +11,7 @@ const user = {
     squadInitials: 'RLL',
   };
 
-  const personalAndProfessional = {...user, ...jobInfos}; // Juntando os dois objetos com spread operetor
+  const personalAndProfessional = {...user, ...jobInfos}; // Juntando os dois objetos com spread operator
 
   console.log(personalAndProfessional);
 
