@@ -5,3 +5,5 @@ const chiron = ['Chiron', 'Bugatti', 2016];
 const toObject =([tipo, marca, ano]) => ({tipo, marca, ano});
 
 console.log(palio);
+
+//criando função para array destructuring e abreviation object literal
