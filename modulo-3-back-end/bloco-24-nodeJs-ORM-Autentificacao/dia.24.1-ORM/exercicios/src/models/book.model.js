@@ -5,7 +5,7 @@
 // updatedAt: deve ser do tipo DateType.DATE
 
 const BookModel = (sequelize, DataTypes) => {
-    const User = sequelize.define('User', {
+    const Book = sequelize.define('Book', {
       title: DataTypes.STRING,
       author: DataTypes.STRING,
       pageQuantity: DataTypes.INTEGER,
@@ -13,7 +13,7 @@ const BookModel = (sequelize, DataTypes) => {
       updatedAt: DataTypes.DATE,
     });
   
-    return User;
+    return Book;
   };
   
-  module.exports = UserModel;
+  module.exports = BookModel;
