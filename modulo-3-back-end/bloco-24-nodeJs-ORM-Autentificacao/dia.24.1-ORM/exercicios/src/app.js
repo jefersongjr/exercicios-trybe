@@ -9,6 +9,8 @@ app.get('/books', bookControllers.getAllBooks);
 app.get('/books/:id', bookControllers.getBookById);
 app.post('/books', bookControllers.createNewBook);
 app.put('/books/:id', bookControllers.updateBook);
+app.delete('/books/:id', bookControllers.deleteBooks);
+
 
 
 

@@ -11,7 +11,7 @@ const getBookById = async (req, res) => {
     const { id } = req.params;
     const book = await bookServices.getById(id);
     console.log('ID:', id);
-    if (!book) return res.status(404).json({ message: 'Usuário não encontrado' });
+    if (!book) return res.status(404).json({ message: 'Book not found' });
 
     return res.status(200).json(book);
    } catch (error) {
@@ -26,7 +26,7 @@ const createNewBook = async (req, res) => {
       return res.status(201).json(newBook);
     } catch (e) {
       console.log(e.message);
-      res.status(500).json({ message: error500Message });
+      res.status(500).json({ message: 'error' });
     }
   };
 
@@ -45,9 +45,24 @@ const createNewBook = async (req, res) => {
     }
   };
 
+  const deleteBooks = async (req, res) => {
+    try {
+      const { id } = req.params;
+      await bookServices.deleteBook(id);
+  
+      return res.status(200).json({ message: 'Book was been removed!' });
+    } catch (e) {
+      console.log(e.message);
+      res.status(500).json({ message: 'Algo deu errado' });
+    }
+  };
+
+
+
 module.exports = {
     getAllBooks,
     getBookById,
     createNewBook,
     updateBook,
+    deleteBooks,
 }
