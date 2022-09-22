@@ -18,8 +18,20 @@ const getBookById = async (req, res) => {
     return null;
    }
 }
+const createNewBook = async (req, res) => {
+    try {
+      const { title, author, pageQuantity } = req.body;
+      const newBook = await bookServices.createBook(title, author, pageQuantity);
+  
+      return res.status(201).json(newBook);
+    } catch (e) {
+      console.log(e.message);
+      res.status(500).json({ message: error500Message });
+    }
+  };
 
 module.exports = {
     getAllBooks,
     getBookById,
+    createNewBook,
 }

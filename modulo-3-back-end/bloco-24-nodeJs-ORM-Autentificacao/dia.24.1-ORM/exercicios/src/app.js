@@ -7,6 +7,8 @@ app.use(express.json());
 
 app.get('/books', bookControllers.getAllBooks);
 app.get('/books/:id', bookControllers.getBookById);
+app.post('/books', bookControllers.createNewBook);
+
 
 
 module.exports = app;
