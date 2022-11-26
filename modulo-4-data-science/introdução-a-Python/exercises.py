@@ -79,4 +79,4 @@ print(info)
 # Exercício 9: Remova a propriedade cuja chave é “origem” e imprima o objeto no console.
 
 del info["origem"]
-print(info)
+print(info) 
