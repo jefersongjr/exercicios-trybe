@@ -40,3 +40,5 @@ total = 60
 transport = (total- 1) * 0.75 + 3
 priceTotal = price * total + transport
 print(priceTotal)
+
+print(type(a))
